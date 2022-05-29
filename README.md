@@ -18,4 +18,5 @@ The jam hasn't ended yet so no rating is available
 
 ### Links
 [Itch Page for the Game](https://zerokun265.itch.io/bugcatcher)
+
 [Itch Page for the Jam](https://itch.io/jam/zeno-jam-the-perfect-jam-for-beginners-5)
