@@ -2,7 +2,7 @@
 A 2d Point and click game made in a day for the ZenoJam 5(May 2022)
 ## The Making
 This game was made for the ZenoJam 5 after a friend of mine talked about it.
-The game started developement 36 hours before the jam but it took about 6 hours consecutive(as for the release of the mvp)
+The game started developement 36 hours before the jam but it took about 12 hours consecutive(as for the release of the mvp)
 The game was made with the Godot Game Engine, other tools used were:
 - Aseprite
 - Soundtrap
