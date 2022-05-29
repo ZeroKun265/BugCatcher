@@ -5,6 +5,8 @@ This game was made for the ZenoJam 5 after a friend of mine talked about it.
 The game started developement 36 hours before the jam but it took about 6 hours consecutive(as for the release of the mvp)
 The game was made with the Godot Game Engine, other tools used were:
 - Aseprite
+- Soundtrap
+- Sfxr
 
 ## Ranking
 The jam hasn't ended yet so no rating is available

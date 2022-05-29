@@ -10,9 +10,10 @@ var did_tutorial := false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass
 
 
 
 func _process(delta):
-	pass
+	if Input.is_action_just_pressed("ui_cancel") and OS.get_name() != "HTML5":
+		get_tree().quit()

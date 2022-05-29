@@ -16,4 +16,5 @@ func _process(delta):
 func _on_Button_button_down():
 	var data = get_tree().get_root().get_node("World/Data")
 	data.score += points
+	get_node("/root/GoodSound").play()
 	queue_free()

@@ -11,7 +11,7 @@ margin_right = 266.0
 margin_bottom = 159.0
 color = Color( 0.054902, 0.0392157, 0.0941176, 1 )
 
-[node name="Bugs" type="Node" parent="."]
-
 [node name="Lamps" type="Node" parent="."]
 script = ExtResource( 2 )
+
+[node name="Bugs" type="Node" parent="."]

@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Play.gd" type="Script" id=1]
 [ext_resource path="res://Images/logo_small_monochrome_dark.png" type="Texture" id=2]
-[ext_resource path="res://Images/Bug3.png" type="Texture" id=3]
+[ext_resource path="res://Images/Bug1.png" type="Texture" id=3]
 [ext_resource path="res://Credits.gd" type="Script" id=4]
 [ext_resource path="res://Difficulty.gd" type="Script" id=5]
 [ext_resource path="res://Difficulty Settings.gd" type="Script" id=6]
@@ -35,7 +35,7 @@ scale = Vector2( 0.0285645, 0.0285645 )
 texture = ExtResource( 2 )
 
 [node name="Bug3" type="Sprite" parent="Main/Label"]
-position = Vector2( 74, 23 )
+position = Vector2( 74, 22 )
 scale = Vector2( 1.8125, 1.8125 )
 texture = ExtResource( 3 )
 
