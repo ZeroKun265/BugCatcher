@@ -1,14 +1,18 @@
 extends Node2D
 
-var n_lights := 1
-var chance_bugs := 135
-var chance_butterfly := 170
-var winning_score := 15
+var n_lights
+var chance_bugs
+var chance_butterfly
+var winning_score
 
 
 # Called when the node enters the scene tree for the first time.
 var rng = RandomNumberGenerator.new()
 func _ready():
+	n_lights = get_node("/root/GLOBAL").n_lights
+	chance_bugs = get_node("/root/GLOBAL").chance_bugs
+	chance_butterfly = get_node("/root/GLOBAL").chance_butterfly
+	winning_score = get_node("/root/GLOBAL").winning_score
 	
 	for i in range(n_lights):
 		var x = load("res://Lamp.tscn").instance()

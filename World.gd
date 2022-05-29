@@ -21,11 +21,11 @@ func _process(delta):
 			var l = load("res://TestLevel.tscn").instance()
 			l.name = "Level"
 			add_child(l)
+			
+			
 	if get_node("Data").game_state == get_node("Data").win_state.WON:
-		print("WON")
 		get_tree().change_scene("res://Win.tscn")
 	elif get_node("Data").game_state == get_node("Data").win_state.LOST:
-		print("LOST")
 		get_tree().change_scene("res://Lose.tscn")
 	
 		

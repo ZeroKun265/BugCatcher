@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Images/Bug1.png" type="Texture" id=1]
 [ext_resource path="res://Images/Bug3.png" type="Texture" id=2]
 [ext_resource path="res://Images/Bug4.png" type="Texture" id=3]
 [ext_resource path="res://Images/Bug2.png" type="Texture" id=4]
+[ext_resource path="res://ResetButtonAfterGameOver.gd" type="Script" id=5]
 
 [node name="Lose" type="Node2D"]
 
@@ -53,3 +54,13 @@ texture = ExtResource( 2 )
 [node name="Bug7" type="Sprite" parent="Label/Bug1"]
 position = Vector2( 13, -25 )
 texture = ExtResource( 4 )
+
+[node name="ResetButtonAfterGameOver" type="Button" parent="."]
+margin_left = -5.0
+margin_top = -3.0
+margin_right = 263.0
+margin_bottom = 155.0
+flat = true
+script = ExtResource( 5 )
+
+[connection signal="pressed" from="ResetButtonAfterGameOver" to="ResetButtonAfterGameOver" method="_on_ResetButtonAfterGameOver_pressed"]

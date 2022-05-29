@@ -14,4 +14,8 @@ func _ready():
 
 
 func _on_Play_pressed():
+	get_node("/root/GLOBAL").n_lights = get_parent().get_node("Difficulty Settings").lights
+	get_node("/root/GLOBAL").chance_bugs = get_parent().get_node("Difficulty Settings").bugs
+	get_node("/root/GLOBAL").chance_butterfly = get_parent().get_node("Difficulty Settings").butterflies
+	get_node("/root/GLOBAL").winning_score = get_parent().get_node("Difficulty Settings").score
 	get_tree().change_scene("res://World.tscn")
