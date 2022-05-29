@@ -1,0 +1,163 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Images/Bug1.png" type="Texture" id=1]
+[ext_resource path="res://Images/Butterfly2.png" type="Texture" id=2]
+[ext_resource path="res://Images/Butterfly3.png" type="Texture" id=3]
+[ext_resource path="res://Images/Bug3.png" type="Texture" id=4]
+[ext_resource path="res://Images/Bug4.png" type="Texture" id=5]
+[ext_resource path="res://Tutorial.gd" type="Script" id=6]
+[ext_resource path="res://Images/Butterfly1.png" type="Texture" id=7]
+[ext_resource path="res://Images/Bug2.png" type="Texture" id=8]
+[ext_resource path="res://Images/Lamp.png" type="Texture" id=9]
+[ext_resource path="res://Images/Lamp_off.png" type="Texture" id=10]
+
+[node name="Tutorial" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 257.0
+margin_bottom = 155.0
+color = Color( 0.054902, 0.0392157, 0.0941176, 1 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = -8.0
+margin_top = -8.0
+margin_right = 269.0
+margin_bottom = 158.0
+flat = true
+
+[node name="States" type="Node" parent="."]
+
+[node name="State1" type="Label" parent="States"]
+margin_right = 257.0
+margin_bottom = 150.0
+text = "           
+		                 Light Attracts Bugs
+						
+						         Click the bugs to get points
+								
+								               +1                          +3
+											 
+											              +2                           +4"
+
+[node name="Bug1" type="Sprite" parent="States/State1"]
+position = Vector2( 45, 91 )
+texture = ExtResource( 1 )
+
+[node name="Bug2" type="Sprite" parent="States/State1/Bug1"]
+position = Vector2( -2, 32 )
+texture = ExtResource( 8 )
+
+[node name="Bug3" type="Sprite" parent="States/State1/Bug1/Bug2"]
+position = Vector2( 163, -33 )
+texture = ExtResource( 4 )
+
+[node name="Bug4" type="Sprite" parent="States/State1/Bug1/Bug2"]
+position = Vector2( 164, 2 )
+texture = ExtResource( 5 )
+
+[node name="State2" type="Label" parent="States"]
+visible = false
+margin_right = 257.0
+margin_bottom = 150.0
+text = "           
+		                 Light Attracts Bugs
+						
+						         Butterflies take away points
+								
+								               -1                          -3
+											 
+											              -2 "
+
+[node name="Bug1" type="Sprite" parent="States/State2"]
+position = Vector2( 45, 91 )
+texture = ExtResource( 7 )
+
+[node name="Bug2" type="Sprite" parent="States/State2/Bug1"]
+position = Vector2( -2, 32 )
+texture = ExtResource( 2 )
+
+[node name="Bug3" type="Sprite" parent="States/State2/Bug1/Bug2"]
+position = Vector2( 163, -33 )
+texture = ExtResource( 3 )
+
+[node name="State3" type="Label" parent="States"]
+visible = false
+margin_right = 257.0
+margin_bottom = 150.0
+rect_pivot_offset = Vector2( -91, 18 )
+text = "           
+		                 Light Attracts Bugs
+						
+						         You can turn off the lights with
+								                            [SPACE]"
+
+[node name="State4" type="Label" parent="States"]
+visible = false
+margin_right = 257.0
+margin_bottom = 150.0
+rect_pivot_offset = Vector2( -33, 40 )
+text = "           
+		                 Light Attracts Bugs
+						
+						        Lights on will spawn more bugs
+								
+								         Lights off will make them flee "
+
+[node name="Lamp" type="Sprite" parent="States/State4"]
+position = Vector2( 18, 51 )
+scale = Vector2( 0.71875, 0.71875 )
+texture = ExtResource( 9 )
+
+[node name="Lamp" type="Sprite" parent="States/State4/Lamp"]
+position = Vector2( 1.3913, 59.8261 )
+scale = Vector2( 0.968071, 0.968071 )
+texture = ExtResource( 10 )
+
+[node name="State5" type="Label" parent="States"]
+visible = false
+margin_right = 257.0
+margin_bottom = 150.0
+rect_pivot_offset = Vector2( -33, 40 )
+text = "           
+		                 Light Attracts Bugs
+						
+						        If bugs flee you lose
+								
+								         If butterflies flee they disappear"
+
+[node name="Lamp" type="Sprite" parent="States/State5"]
+position = Vector2( 19, 57 )
+scale = Vector2( 1.29688, 1.48438 )
+texture = ExtResource( 4 )
+
+[node name="Lamp" type="Sprite" parent="States/State5/Lamp"]
+position = Vector2( 1.54217, 22.2316 )
+scale = Vector2( 0.968071, 0.968071 )
+texture = ExtResource( 7 )
+
+[node name="State6" type="Label" parent="States"]
+visible = false
+margin_right = 257.0
+margin_bottom = 150.0
+rect_pivot_offset = Vector2( -33, 40 )
+text = "           
+		                       GET READY
+						
+						        CLICK THE BUGS
+								
+								        FLEE THE BUTTERFLIES
+										                       
+															                   CLICK TO START"
+
+[node name="Lamp" type="Sprite" parent="States/State6"]
+position = Vector2( 19, 57 )
+scale = Vector2( 1.29688, 1.48438 )
+texture = ExtResource( 4 )
+
+[node name="Lamp" type="Sprite" parent="States/State6/Lamp"]
+position = Vector2( 1.54217, 22.2316 )
+scale = Vector2( 0.968071, 0.968071 )
+texture = ExtResource( 7 )
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
