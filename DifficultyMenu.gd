@@ -23,12 +23,12 @@ func _process(delta):
 	$"Current Butterflies".text = str(butterflies)
 	$"Current Score".text = str(score)
 	
-	if lights < 0:
-		lights = 0
+	if lights < 1:
+		lights = 1
 	if bugs < 1:
 		bugs = 1
-	if score < 0:
-		score = 0
+	if score < 1:
+		score = 1
 	if butterflies < 1:
 		butterflies = 1
 
