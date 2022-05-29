@@ -17,4 +17,4 @@ func _ready():
 
 
 func _on_Credits_pressed():
-	OS.shell_open("https://github.com/ZeroKun265")
+	OS.shell_open("https://github.com/ZeroKun265/BugCatcher")
