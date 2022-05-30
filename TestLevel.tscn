@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Level.gd" type="Script" id=1]
 [ext_resource path="res://Lamp.gd" type="Script" id=2]
+[ext_resource path="res://Images/Light.png" type="Texture" id=3]
 
 [node name="TestLevel" type="Node2D"]
 script = ExtResource( 1 )
@@ -15,3 +16,12 @@ color = Color( 0.054902, 0.0392157, 0.0941176, 1 )
 script = ExtResource( 2 )
 
 [node name="Bugs" type="Node" parent="."]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+margin_left = 10.0
+margin_top = 127.0
+margin_right = 26.0
+margin_bottom = 143.0
+texture_normal = ExtResource( 3 )
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

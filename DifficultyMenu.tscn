@@ -165,6 +165,13 @@ margin_right = 48.0
 margin_bottom = 147.0
 text = "Help"
 
+[node name="Default" type="Button" parent="."]
+margin_left = 91.0
+margin_top = 125.0
+margin_right = 149.0
+margin_bottom = 145.0
+text = "Default"
+
 [node name="Back" type="Button" parent="."]
 margin_left = 153.0
 margin_top = 125.0
@@ -198,4 +205,5 @@ margin_right = 254.0
 margin_bottom = 118.0
 
 [connection signal="pressed" from="Help" to="." method="_on_Help_pressed"]
+[connection signal="pressed" from="Default" to="." method="_on_Default_pressed"]
 [connection signal="pressed" from="Back" to="Back" method="_on_Back_pressed"]

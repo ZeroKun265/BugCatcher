@@ -35,3 +35,10 @@ func _process(delta):
 
 func _on_Help_pressed():
 	get_tree().get_root().get_node("MainMenu").add_child(load("res://SettingsHelp.tscn").instance())
+
+
+func _on_Default_pressed():
+	get_tree().get_root().get_node("MainMenu/DifficultyMenu").score = 15
+	get_tree().get_root().get_node("MainMenu/DifficultyMenu").lights = 1
+	get_tree().get_root().get_node("MainMenu/DifficultyMenu").butterflies = 170
+	get_tree().get_root().get_node("MainMenu/DifficultyMenu").bugs = 135

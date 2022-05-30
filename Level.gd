@@ -38,8 +38,17 @@ func spawn_butterfly(position):
 	bug.points = rng.randi_range(1,4)
 	get_node("Bugs").add_child(bug)
 
-
+var space_pressed = false
 func _process(delta):
+	
+	if Input.is_action_just_pressed("ui_accept"):
+		space_pressed = true
+	if space_pressed:
+		get_tree().get_root().get_node("World/Data").lights_on = not get_tree().get_root().get_node("World/Data").lights_on
+		space_pressed = false
+
+	
+	
 	if get_tree().get_root().get_node("World/Data").game_state == get_tree().get_root().get_node("World/Data").win_state.PLAYING:
 		var roll : float
 		for child in get_node("Lamps").get_children():
@@ -56,3 +65,7 @@ func _process(delta):
 						spawn_butterfly(child.position)
 					
 	
+
+
+func _on_TextureButton_pressed():
+	space_pressed = true
