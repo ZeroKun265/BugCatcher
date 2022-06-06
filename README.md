@@ -11,12 +11,16 @@ The game was made with the Godot Game Engine, other tools used were:
 
 ## Ranking
 
+Ranking from [the gam's page](https://itch.io/jam/zeno-jam-the-perfect-jam-for-beginners-5/rate/1551339)
+
 Criteria | Rank | Score | Raw Score
 ---------|------|-------|----------
 <u>Theme</u> | #25 | 3.808 | 3.933
 <u>Polishing</u> | #39 | 2.582 | 2.667
 <u>Overall</u> | #46 | 2.647 | 2.733
 <u>Fun</u> | #47 | 2.259 | 2.333
+
+Ranked from 15 ratings. Score is adjusted from raw score by the median number of ratings per game in the jam.
 
 ## Gameplay
 - Press SPACE to turn off the lights and click the bugs to catch them
