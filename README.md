@@ -10,7 +10,13 @@ The game was made with the Godot Game Engine, other tools used were:
 - Pixlr e
 
 ## Ranking
-The jam hasn't ended yet so no rating is available
+
+Criteria | Rank | Score | Raw Score
+---------|------|-------|----------
+<u>Theme</u> | #25 | 3.808 | 3.933
+<u>Polishing</u> | #39 | 2.582 | 2.667
+<u>Overall</u> | #46 | 2.647 | 2.733
+<u>Fun</u> | #47 | 2.259 | 2.333
 
 ## Gameplay
 - Press SPACE to turn off the lights and click the bugs to catch them
